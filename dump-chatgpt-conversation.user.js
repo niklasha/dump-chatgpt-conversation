@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         dump-chatgpt-conversation
 // @namespace    https://github.com/niklasha/dump-chatgpt-conversation
-// @version      0.14
+// @version      0.15
 // @author       Niklas Hallqvist <niklas@appli.se>
 // @match        https://chat.openai.com/*
 // @grant        none

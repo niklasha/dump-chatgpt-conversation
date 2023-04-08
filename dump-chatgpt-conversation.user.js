@@ -25,7 +25,7 @@
     function downloadConversation() {
         var title = document.querySelector("head > title").textContent.replace(/\s+/g,' ').trim();
         var fileName = title + ".html";
-        var mainDiv = document.evaluate("/html/body/div[1]/div[1]/div[1]/main/div[1]/div/div", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        var mainDiv = document.evaluate("//main", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.querySelector("div > div > div");
         mainDiv.querySelectorAll("button").forEach(function(elem) {
             elem.remove();
         });
